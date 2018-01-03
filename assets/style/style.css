@@ -1,0 +1,80 @@
+
+body{
+    background-image: url("../img/fondu.png");
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 100%;
+}
+
+
+.headerbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 10em;
+}
+
+.col{
+    margin: auto;
+    display: inline-block;
+    max-height: 100%;
+}
+#col1{grid-area: 1/1;}
+#col2{grid-area: 1/2;}
+#col3{grid-area: 1/3; } /*padding-bottom: 5em; */
+
+.chercher{
+   display: inline-flex;
+}
+#search{
+    width: 25em;
+}
+.membre{
+    display: inline-block;
+}
+.membre > input{
+    max-width: 12em;
+    max-height: 5em;
+}
+
+.nav-link{
+    display: inline-block;
+}
+
+#presentation{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*DEMANDER TEDDY*/
+}
+.img-perso{
+    
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+
+
+
+
+
+.histoires{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;              
+}
+
+.histoire1{
+    border-style: solid;
+    border: 1px;
+    grid-area: 1/2;
+}
+.histoire2{
+    border: 1px;
+    grid-area: 2/2;
+}
+.histoire3{
+    border: 1px;
+    grid-area: 3/2;
+}
